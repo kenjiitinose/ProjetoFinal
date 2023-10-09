@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 3</title>
+
+</head>
+<body>
+        <script>
+        let estoqueAtual = +prompt("Controle de estoque! \nDigite a quantidade atual em estoque do produto x: ");
+        let maximoEstoque = +prompt("Qual a quantidade máxima do produto em estoque? ");
+        let minimoEstoque = +prompt("Qual a quantidade mínima do produto em estoque? ");
+        let mediaProduto = ((maximoEstoque+minimoEstoque)/2);
+
+        if(estoqueAtual >= mediaProduto){
+            alert("A quantidade atual é maior ou igual a margem de segurança em estoque! \n\nNÃO EFETUAR COMPRA!");
+        }else{
+            alert("A quantidade está abaixo da margem de segurança em estoque! \n\nEFETUAR COMPRA!");
+        }
+    </script>
+</body>
+</html>

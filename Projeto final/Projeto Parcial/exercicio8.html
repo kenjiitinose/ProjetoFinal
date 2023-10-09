@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 8 </title>
+    <script>
+        let consumo = +prompt("Calculadora de consumo de energia em Kwh. \nDigite o quanto seu estabelecimento consumiu em Kwh:");
+        let calculo;
+
+        if(consumo < 301 && consumo>0){
+            calculo = (consumo*1.25);
+            alert("O valor da sua conta será de: " + calculo + " Reais.");
+        }else if(consumo>300 && consumo<=600){
+            calculo = (consumo*1.5);
+            alert("O valor da sua conta será de: " + calculo + " Reais.");
+        }else if(consumo>601 && consumo<=1000){
+            calculo = (consumo*1.75);
+            alert("O valor da sua conta será de: " + calculo + " Reais.");
+        }else if(consumo>1000){
+            calculo = (consumo*2);
+            alert("O valor da sua conta será de: " + calculo + " Reais.");
+        }else {
+            alert("Valor digitado é nulo!")
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 8</title>
+</head>
+<body>
+    <script>
+        //exercicio 8
+        let nomePessoas = [];
+        let nomeIgual = [];
+        let contagem=0;
+        let contagem1=0;
+
+
+        for(let i = 0; i<= 9; i++){
+            nomePessoas[i] = prompt("Digite o nome da pessoa " + (i+1));
+            contagem++
+            if(contagem === 10){
+                nomeIgual = prompt("Digite mais 1 nome para verificação de nomes iguais. ");
+                for(let i = 0; i <= nomePessoas.length; i++){
+                    contagem1++
+                    if(nomePessoas[i] == nomeIgual){
+                        nomeIgual = nomePessoas[i];
+                        alert("ACHEI");
+                        
+                    }else if(nomeIgual != nomePessoas[i] && contagem1 == 10){
+                        alert("NÃO ACHEI")
+                    
+            }
+                }
+            }
+        }
+            
+    </script>
+</body>
+</html>

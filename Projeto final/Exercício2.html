@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 2</title>
+
+</head>
+<body>
+        <script>
+            //exercicio 2
+        let carrosVendidos = Number(prompt("Calculadora para sálario de vendedor(a) de veículos! \nDigite quantos carros foram vendidos pelo funcionário(a): "));
+        let valorTotalVendas = Number(prompt("Qual foi o valor (em Reais) do total da venda realizado pelo funcionário(a)? "));
+        let salarioFixo = Number(prompt("Qual o salário fixo do funcionário(a)? \nObs: No lugar de vírgula coloque '.'"));
+        let valorPorCarro = Number(prompt("Qual o valor que o funcionário(a) recebe por cada veículo vendido?"));
+        
+        let vendasPorcentagem = 0.05 * valorTotalVendas;
+        let comissaoFixa = valorPorCarro * carrosVendidos;
+        let salarioFinal = vendasPorcentagem + comissaoFixa + salarioFixo;
+
+        alert("O salário final do funcionário é: " + " R$ " + salarioFinal + "\n\nQuantidade de carros vendidos: " + carrosVendidos + "\nValor Total das vendas: " + valorTotalVendas + " \nSalário fixo mensal: " + salarioFixo + " \nComissão por carro vendido: " + valorPorCarro + "\nComissão de 5% sobre o toal de vendas: " + vendasPorcentagem);
+    </script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 10</title>
+
+    <script>
+        /*
+        let precoAnterior = +prompt("Calcular o preço de um produto para promoção \nDigite o preço anterior: ");
+        let precoAtual = +prompt("Digite o preço atual do produto: ");
+        let precoComDesconto = precoAtual - (precoAtual*0,1);
+        let mediaPrecoAtual = ((precoAnterior+precoAtual)/2);
+        let mediaAtualComDesconto = mediaPrecoAtual-(mediaPrecoAtual*0,1);
+        
+        if (precoComDesconto>mediaAtualComDesconto){
+            alert("O melhor preço para promoção é: " + mediaAtualComDesconto + " Reais");
+        } else if(mediaAtualComDesconto>precoComDesconto){
+            alert("O melhor preço para promoção é: " + precoComDesconto + " Reais");
+        }*/
+        /* para descobrir quantas vezes contou um número
+        let num, cont = 0;
+
+        do{
+            num = parseInt(prompt("Digite um número para somar, ou 0 para finalizar."));
+            if(num !== 0){
+                cont++;
+            }
+        }while(num !== 0);
+        alert("Foram digitados " + cont + " números.") */
+/* for
+        let n =4;
+        let anterior =0, proximo = 1, aux, resp;
+
+        if(n ===1){
+            resp=0;
+        }else if(n === 2){
+            resp =1;
+        } else{
+            for(let i = 3; i <= n; i++ ){
+                aux = proximo;
+                proximo = proximo + anterior;
+                anterior = aux;
+            }
+            resp = proximo;
+        }
+            console.log("F("+n+") = " + resp) */
+            /* ARRAYS - VETORES
+            let frutas = ["mamão", "banana", "maçã", "uva", "abacate"];
+
+            for(let i=0;i < frutas.length; i++){
+                console.log(frutas[i])
+            }  */
+            
+                // parseInt so pega o numero inteiro
+            let notas = [8,7.5,7];
+            let soma = 0, media, maior=notas[0];
+            for(let i = 0; i<notas.length; i++){
+                soma += notas[i];
+                if(notas[i]>maior){
+                    maior = notas[i];
+                }
+            }
+            media = soma/notas.length;
+            console.log("Média notas = " + media.toFixed(1))
+            console.log("Maior nota = " + maior)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

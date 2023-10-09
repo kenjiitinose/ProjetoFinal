@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 1</title>
+
+</head>
+<body>
+        <script>
+        let precoFabrica = Number(prompt("Calculadora de custo final ao consumidor. \nInsira o valor de Fábrica do Veículo: "));
+        let porcentoDistribuidor = 0.28 * precoFabrica;
+        let impostos = 0.45 * precoFabrica;
+        let precoFinal = precoFabrica + porcentoDistribuidor + impostos;
+
+        alert("O valor do produto para o consumidor final \n(somando impostos e percenteual do Distribuidor) é de: " + "R$ " + precoFinal)
+
+    </script>
+</body>
+</html>
